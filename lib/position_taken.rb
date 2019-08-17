@@ -2,11 +2,7 @@
 board = ["","","","","","","","",""]
 
 def position_taken?(array,index)
-  if array[index] == ""
-    return false
-  elsif array[index] == " "
-    return false
-  elsif array[index] == nil
+  if array[index] == "" || " " || nil
     return false
   elsif array[index] == "X" || "O"
     return true
